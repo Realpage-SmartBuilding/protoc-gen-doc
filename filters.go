@@ -5,6 +5,8 @@ import (
 	"html/template"
 	"regexp"
 	"strings"
+
+	"github.com/gomarkdown/markdown"
 )
 
 var (
@@ -35,4 +37,11 @@ func NoBrFilter(content string) string {
 		paragraphs[i] = spacePattern.ReplaceAllString(withoutLF, " ")
 	}
 	return strings.Join(paragraphs, "\n\n")
+}
+
+// MdFilter treats the content as Markdown and output as HTML.
+func MdFilter(content string) template.HTML {
+	html := markdown.ToHTML([]byte(content), nil, nil)
+	trimedHtml := strings.Trim(string(html), "\n")
+	return template.HTML(trimedHtml)
 }
