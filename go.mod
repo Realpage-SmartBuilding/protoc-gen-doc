@@ -5,7 +5,7 @@ require (
 	github.com/Masterminds/sprig v2.15.0+incompatible
 	github.com/aokoli/goutils v1.0.1 // indirect
 	github.com/envoyproxy/protoc-gen-validate v0.0.14
-	github.com/golang/protobuf v1.3.2
+	github.com/golang/protobuf v1.3.5
 	github.com/google/uuid v0.0.0-20161128191214-064e2069ce9c // indirect
 	github.com/huandu/xstrings v1.0.0 // indirect
 	github.com/imdario/mergo v0.3.4 // indirect

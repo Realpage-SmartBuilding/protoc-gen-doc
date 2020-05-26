@@ -87,8 +87,8 @@ go_repository(
 go_repository(
     name = "com_github_davecgh_go_spew",
     importpath = "github.com/davecgh/go-spew",
-    sum = "h1:XxMZvQZtTXpWMNWK82vdjCLCe7uGMFXdTsJH0v3Hkvw=",
-    version = "v0.0.0-20161028175848-04cdfd42973b",
+    sum = "h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=",
+    version = "v1.1.0",
 )
 
 go_repository(
@@ -108,8 +108,8 @@ go_repository(
 go_repository(
     name = "com_github_gogo_protobuf",
     importpath = "github.com/gogo/protobuf",
-    sum = "h1:DqDEcV5aeaTmdFBePNpYsp3FlcVH/2ISVVM9Qf8PSls=",
-    version = "v1.3.1",
+    sum = "h1:G8O7TerXerS4F6sx9OV7/nRfJdnXgHZu/S/7F2SN+UE=",
+    version = "v1.3.0",
 )
 
 go_repository(
@@ -178,7 +178,7 @@ go_repository(
 go_repository(
     name = "com_github_mwitkow_go_proto_validators",
     importpath = "github.com/mwitkow/go-proto-validators",
-    sum = "h1:28i1IjGcx8AofiB4N3q5Yls55VEaitzuEPkFJEVgGkA=",
+    sum = "h1:2WkInbIheqmDevK9h0S/K6f0Os/HlTPGJeRwDAeQE1w=",
     version = "v0.3.0",
 )
 
@@ -192,8 +192,8 @@ go_repository(
 go_repository(
     name = "com_github_pmezard_go_difflib",
     importpath = "github.com/pmezard/go-difflib",
-    sum = "h1:GD+A8+e+wFkqje55/2fOVnZPkoDIu1VooBWfNrnY8Uo=",
-    version = "v0.0.0-20151028094244-d8ed2627bdf0",
+    sum = "h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=",
+    version = "v1.0.0",
 )
 
 go_repository(
@@ -206,8 +206,8 @@ go_repository(
 go_repository(
     name = "com_github_stretchr_testify",
     importpath = "github.com/stretchr/testify",
-    sum = "h1:Zx8Rp9ozC4FPFxfEKRSUu8+Ay3sZxEUZ7JrCWMbGgvE=",
-    version = "v0.0.0-20170130113145-4d4bfba8f1d1",
+    sum = "h1:TivCn/peBQ7UY8ooIcPgZFpTNSz0Q2U6UrFlUfqbe0Q=",
+    version = "v1.3.0",
 )
 
 go_repository(
@@ -292,4 +292,11 @@ go_repository(
     importpath = "golang.org/dl",
     sum = "h1:jeP6FgaSLNTMP+Yri3qjlACywQLye+huGLmNGhBzm6k=",
     version = "v0.0.0-20190829154251-82a15e2f2ead",
+)
+
+go_repository(
+    name = "com_github_stretchr_objx",
+    importpath = "github.com/stretchr/objx",
+    sum = "h1:4G4v2dO3VZwixGIRoQ5Lfboy6nUhCyYzaqnIAPPhYs4=",
+    version = "v0.1.0",
 )

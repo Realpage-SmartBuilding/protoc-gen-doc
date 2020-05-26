@@ -1,24 +1,9 @@
-load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
 
 go_library(
     name = "go_default_library",
-    srcs = ["lyft_validate.go"],
+    srcs = ["alias.go"],
     importpath = "github.com/pseudomuto/protoc-gen-doc/extensions/lyft_validate",
     visibility = ["//visibility:public"],
-    deps = [
-        "//extensions:go_default_library",
-        "//thirdparty/github.com/envoyproxy/protoc-gen-validate/validate:validate_go_proto",
-    ],
-)
-
-go_test(
-    name = "go_default_test",
-    srcs = ["lyft_validate_test.go"],
-    embed = [":go_default_library"],
-    deps = [
-        "//extensions:go_default_library",
-        "//thirdparty/github.com/envoyproxy/protoc-gen-validate/validate:validate_go_proto",
-        "@com_github_golang_protobuf//proto:go_default_library",
-        "@com_github_stretchr_testify//require:go_default_library",
-    ],
+    deps = ["//extensions/envoyproxy_validate:go_default_library"],
 )
