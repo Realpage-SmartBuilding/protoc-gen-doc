@@ -26,6 +26,6 @@ go_proto_library(
     deps = [
         "//github.com/envoyproxy/protoc-gen-validate/validate:go_default_library",
         "//github.com/mwitkow/go-proto-validators:go_default_library",
-        "@go_googleapis//google/api:annotations_go_proto",
+        "@org_golang_google_genproto_googleapis_api//annotations",
     ],
 )
